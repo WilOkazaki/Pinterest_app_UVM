@@ -1,0 +1,136 @@
+.App {
+  min-width: 100vw;
+  min-height: 10vh;
+  width: 100vw;
+  height: 100vh;
+  background-color:white;
+  display: flex; 
+  overflow-x: hidden;
+  padding: 0px 40px;
+}
+
+.contenedorMenu{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    padding: 30px 15px;
+    
+}
+
+.subMenu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 70px;
+    min-width: 40px;
+}
+
+.iconContenedor{
+    width: 50px;
+    height: 50px;
+    min-width: 40px;
+    border-radius: 40%;
+    border: 2px solid #757677;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: 0.4s;
+}
+
+.MuiSvgIcon-root{
+    color:rgba(0, 0, 0, 0.17);
+    font-size: 19px;
+}
+
+.iconContenedor:hover, .iconContenedor.active{
+    background: rgba(0, 0, 0, 0.17);
+}
+
+.iconContenedor:hover .MuiSvgIcon-root,
+.iconContenedor.active, .MuiSvgIcon-root{
+    color:rgb(41, 128, 185);
+}
+
+.main{
+    flex: 1;
+    height: 100%;
+    padding-top: 35px;
+    margin-left: 130px;
+}
+
+.buscadorBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid #757677; 
+    padding: 8px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.17);
+
+}
+
+.buscador img{
+    width: 25px;
+}
+
+.buscadorBox input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border:none;
+    color:#757677
+}
+
+
+.buscador{
+    background: white;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contenedorMain{
+    flex: 1;
+    height: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat (auto-fill, 300px);
+    grid-auto-rows: 10px;
+    
+}
+
+.pin{
+    border-radius: 16px;
+    background: grey;
+    margin: 5px;
+}
+
+.pin.small{
+    grid-row-end: span 26;
+}
+
+.pin.medium{
+    grid-row-end: span 33;
+}
+
+.pin.large{
+    grid-row-end: span 45;
+}
+
+
