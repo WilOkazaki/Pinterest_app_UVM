@@ -25,6 +25,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -43,7 +44,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin: 12px 0;
+    margin: 15px 0;
     transition: 0.4s;
 }
 
@@ -73,6 +74,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: white;
     border: 2px solid #757677; 
     padding: 8px 15px;
     border-radius: 15px;
@@ -80,16 +82,14 @@
 
 }
 
-.buscador img{
-    width: 25px;
-}
-
 .buscadorBox input{
     height: 100%;
     width: 100%;
     outline: none;
     border:none;
-    color:#757677
+    color:#757677;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -105,21 +105,34 @@
     cursor: pointer;
 }
 
+.buscador img{
+    width: 30px;
+}
+
 .contenedorMain{
-    flex: 1;
-    height: auto;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat (auto-fill, 300px);
-    grid-auto-rows: 10px;
-    
+   flex: 1;
+   height: auto;
+   margin-top: 15px;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 300px);
+   grid-auto-rows: 10px;
+   justify-content: center;
+  
 }
 
 .pin{
     border-radius: 16px;
     background: grey;
-    margin: 5px;
+    margin: 15px;
+    position: relative;
 }
+
+.pin .mainPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ 
 
 .pin.small{
     grid-row-end: span 26;

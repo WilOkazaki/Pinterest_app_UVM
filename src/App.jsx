@@ -16,9 +16,7 @@ function App() {
 
     allIcon.forEach((n) =>n.addEventListener("click", activarMenuActive));
   }, []);
-  //const [count, setCount] = useState(0)
-
-
+  
   return (
     <div className="App">
       <div className='contenedorMenu'>
