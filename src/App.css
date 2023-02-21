@@ -62,6 +62,23 @@
     color:rgb(41, 128, 185);
 }
 
+.favorito .iconContenedor{
+    background-color: none;
+    border: none;
+    border-radius: none;
+}
+
+.favorito .iconContenedor:hover .MuiSvgIcon-root,
+.iconContenedor.active, .MuiSvgIcon-root{
+    color:rgb(240, 50, 50);
+}
+
+h3{
+   color: whitesmoke;
+}
+
+
+
 .main{
     flex: 1;
     height: 100%;
@@ -106,7 +123,7 @@
 }
 
 .buscador img{
-    width: 30px;
+    width: 40px;
 }
 
 .contenedorMain{
@@ -122,15 +139,37 @@
 
 .pin{
     border-radius: 16px;
-    background: grey;
-    margin: 15px;
+    background: gray;
+    margin: 7px;
     position: relative;
+    overflow: hidden;
 }
 
 .pin .mainPic{
     width: 100%;
     height: 100%;
     object-fit: cover;
+ }
+
+ .pin .contenidoPin{
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+ }
+
+ .busqueda img{
+    width: 25px;
+ }
+
+ .pin .contenidoPin .busqueda{
+    
  }
  
 
@@ -145,5 +184,66 @@
 .pin.large{
     grid-row-end: span 45;
 }
+
+/*.card{
+    width: 252px;
+    height: 512px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    background-color: royalblue;
+}
+
+.pin_title{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.pin_modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s ;
+}
+
+.pin_modal:hover{
+    opacity: 1%;
+}
+
+.pin_modal .modal_head{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.pin_modal .modal_foot{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.icon_contenedor{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}*/
 
 

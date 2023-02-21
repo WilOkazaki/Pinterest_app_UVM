@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import{ExitToAppRounded, FavoriteRounded, Person} from "@mui/icons-material"
+import{AddAPhoto, ExitToAppRounded, FavoriteRounded, Person} from "@mui/icons-material"
+import { Modal } from './components/Modal';
+import { IconButton } from '@mui/material';
 import MenuContenedor from './components/MenuContenedor'
 import Pin from './components/Pin'
 import './App.css'
@@ -19,21 +21,25 @@ function App() {
   
   return (
     <div className="App">
+
+     
+     
       <div className='contenedorMenu'>
       
         <img src="https://i.ibb.co/GRXcWmx/pinterest.png" alt="" className="logo" />
 
         <div className="subMenu">
           <div>
-            <MenuContenedor icon={<Person/>}/>
+          <IconButton><MenuContenedor icon={<Person/>}/></IconButton>
           </div>
-
+          <IconButton><MenuContenedor icon={<AddAPhoto/>}/></IconButton>
+         
+          <IconButton><MenuContenedor icon={<FavoriteRounded/>}/></IconButton>
           <div>
-            <MenuContenedor icon={<FavoriteRounded/>}/>
+           
           </div>
-
           <div>
-            <MenuContenedor icon={<ExitToAppRounded/>}/>
+          <IconButton type='file'><MenuContenedor icon={<ExitToAppRounded/>}/></IconButton>
           </div>
         </div>
       </div>
@@ -57,15 +63,7 @@ function App() {
             <Pin pinSize={'small'}/>
             <Pin pinSize={'medium'}/>
             <Pin pinSize={'large'}/>
-            <Pin pinSize={'small'}/>
-            <Pin pinSize={'medium'}/>
-            <Pin pinSize={'large'}/>
-            <Pin pinSize={'small'}/>
-            <Pin pinSize={'medium'}/>
-            <Pin pinSize={'large'}/>
-            <Pin pinSize={'small'}/>
-            <Pin pinSize={'medium'}/>
-            <Pin pinSize={'large'}/>
+           
         </div>
 
       </div>
