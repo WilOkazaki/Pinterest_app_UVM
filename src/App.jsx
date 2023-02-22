@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import{AddAPhoto, ExitToAppRounded, FavoriteRounded, Person} from "@mui/icons-material"
-import { Modal } from './components/Modal';
 import { IconButton } from '@mui/material';
 import MenuContenedor from './components/MenuContenedor'
 import Pin from './components/Pin'
 import './App.css'
+
+
 
 
 function App() {
@@ -18,11 +19,12 @@ function App() {
 
     allIcon.forEach((n) =>n.addEventListener("click", activarMenuActive));
   }, []);
+
+ 
   
   return (
     <div className="App">
 
-     
      
       <div className='contenedorMenu'>
       
@@ -30,16 +32,15 @@ function App() {
 
         <div className="subMenu">
           <div>
-          <IconButton><MenuContenedor icon={<Person/>}/></IconButton>
+            <IconButton><MenuContenedor icon={<Person/>}/></IconButton>
           </div>
-          <IconButton><MenuContenedor icon={<AddAPhoto/>}/></IconButton>
-         
-          <IconButton><MenuContenedor icon={<FavoriteRounded/>}/></IconButton>
+            <IconButton><MenuContenedor icon={<AddAPhoto/>}/></IconButton>
+            <IconButton><MenuContenedor icon={<FavoriteRounded/>}/></IconButton>
           <div>
            
           </div>
           <div>
-          <IconButton type='file'><MenuContenedor icon={<ExitToAppRounded/>}/></IconButton>
+          <IconButton><MenuContenedor icon={<ExitToAppRounded/>}/></IconButton>
           </div>
         </div>
       </div>
@@ -48,9 +49,7 @@ function App() {
       <div className='main'>
 
         <div className="buscadorBox">
-          
           <input type="text" placeholder='Buscador.. '/>
-          
           <div className="buscador">
             <img src="https://i.ibb.co/wh1NVxp/circulo-de-flecha.png" alt='' className='flecha'/>
           </div>
@@ -63,7 +62,6 @@ function App() {
             <Pin pinSize={'small'}/>
             <Pin pinSize={'medium'}/>
             <Pin pinSize={'large'}/>
-           
         </div>
 
       </div>
