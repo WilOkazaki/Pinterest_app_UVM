@@ -10,18 +10,19 @@ export const Login = (props) => {
     }
 
     return (
-        
         <div className="auth-form-container">
-            <img src="https://es.pngtree.com/freepng/white-pinterest-icon-png_3562071.html"/>
+            <div>
+                <img className="pinlogo" src="https://i.ibb.co/GRXcWmx/pinterest.png" alt="" />
+            </div>
             <h2>Login</h2>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">email</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="Tuemail@gmail.com" id="email" name="email" />
+                <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="@gmail.com" id="email" name="email" />
                 <label htmlFor="password">contraseña</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-                <button type="submit">inicia sesión</button>
+                <button type="submit">Inicia sesión</button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>No tienes una cuenta? Resgistrate aqui.</button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>No tienes una cuenta? Registrate aqui.</button>
         </div>
     )
 }

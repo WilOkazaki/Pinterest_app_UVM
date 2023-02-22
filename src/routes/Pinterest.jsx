@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 import{AddAPhoto, ExitToAppRounded, FavoriteRounded, Person} from "@mui/icons-material"
 import { IconButton } from '@mui/material';
-import MenuContenedor from './components/MenuContenedor'
-import Pin from './components/Pin'
-import './App.css'
+import MenuContenedor from './MenuContenedor'
+import Pin from './Pin'
+import './Pinterest.css'
 
 
 
 
-function App() {
+function Pinterest() {
   useEffect (()=>{
     const allIcon= document.querySelectorAll(".iconContenedor");
 
@@ -23,7 +23,7 @@ function App() {
  
   
   return (
-    <div className="App">
+    <div className="Pinterest">
 
      
       <div className='contenedorMenu'>
@@ -70,4 +70,4 @@ function App() {
   );
 }
 
-export default App
+export default Pinterest
