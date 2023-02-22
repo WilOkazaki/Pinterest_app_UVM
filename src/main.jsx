@@ -6,6 +6,7 @@ import Home from './routes/Home'
 //import { Login } from './routes/Login'
 //import { Register } from './routes/Register'
 import Pinterest from './routes/Pinterest'
+import Upload from './routes/Upload'
 
 
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter ([
   {
     path: '/Pinterest',
     element: <Pinterest />,
+  },
+  {
+    path: '/Upload',
+    element: <Upload />,
   },
 ]);
 

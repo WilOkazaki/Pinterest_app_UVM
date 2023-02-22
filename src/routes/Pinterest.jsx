@@ -34,7 +34,7 @@ function Pinterest() {
           <div>
             <IconButton><MenuContenedor icon={<Person/>}/></IconButton>
           </div>
-            <IconButton><MenuContenedor icon={<AddAPhoto/>}/></IconButton>
+           <a href='#!'><IconButton><MenuContenedor icon={<AddAPhoto/>}/></IconButton></a> 
             <IconButton><MenuContenedor icon={<FavoriteRounded/>}/></IconButton>
           <div>
            
