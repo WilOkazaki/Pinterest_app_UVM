@@ -144,12 +144,26 @@
       position: relative;
       overflow: hidden;
   }
+
+  .pin2{
+    border-radius: 16px;
+    background: gray;
+    margin: 7px;
+    position: relative;
+    overflow: hidden;
+}
   
   .pin .mainPic{
       width: 100%;
       height: 100%;
       object-fit: cover;
    }
+
+   .pin2 .mainPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
   
    .pin .contenidoPin{
       width: 100%;
